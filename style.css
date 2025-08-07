@@ -1,0 +1,74 @@
+:root {
+    --primary: #0D5EA6 ;
+    --bg: #320A6B ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Libertinus sans", sans-serif;
+    background-color: var(--bg);
+    color: #FAF7F3;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6%;
+    background-color: rgba(158, 202, 214, 0.8);
+    border-bottom: 1px solid #1c2343;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.navbar .navbar_logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #FAF7F3;
+    font-style: italic;
+}
+.navbar .navbar_logo span {
+    color: var(--primary);
+}
+.navbar .navbar_nav a{
+    color: #FAF7F3;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.8rem  ;
+}
+.navbar .navbar_nav a:hover {
+    color: var(--primary);
+}
+.navbar .navbar_nav a:after {
+    content: "";
+    display: block;
+    padding-bottom: 0.4rem ;
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+.navbar .navbar_nav a:hover::after {
+    transform: scaleX(0.5);
+}
+.navbar .navbar_nav_ficons a{
+    color:#FAF7F3;
+    margin: 0 0.4rem ;
+}
+.navbar_nav_ficons a:hover {
+     color: var(--primary);
+}
+#hamburger_menu {
+    display: none;
+}
+    
